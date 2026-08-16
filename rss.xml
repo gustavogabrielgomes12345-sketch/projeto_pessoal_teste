@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>GGBlogs</title>
+    <link>https://www.seudominio.com/</link>
+    <description>Descrição do blog.</description>
+    <language>pt-br</language>
+
+    <item>
+      <title>Título do Post de Exemplo</title>
+      <link>https://www.seudominio.com/posts/nome-do-post.html</link>
+      <guid>https://www.seudominio.com/posts/nome-do-post.html</guid>
+      <pubDate>Sat, 15 Aug 2026 08:00:00 -0300</pubDate>
+      <description>Resumo curto do post.</description>
+    </item>
+  </channel>
+</rss>

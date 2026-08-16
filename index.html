@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- ============================================================
+       SEO BÁSICO — troque TODOS os valores abaixo pelo conteúdo real
+       ============================================================ -->
+  <title>GGBlogs | Descrição curta e atrativa</title>
+  <meta name="description" content="Descrição do blog em até 155 caracteres, clara e com a palavra-chave principal.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.seudominio.com/">
+
+  <!-- Open Graph (Facebook/LinkedIn/WhatsApp) -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="GGBlogs">
+  <meta property="og:title" content="GGBlogs | Descrição curta e atrativa">
+  <meta property="og:description" content="Descrição do blog em até 155 caracteres.">
+  <meta property="og:url" content="https://www.seudominio.com/">
+  <meta property="og:image" content="https://www.seudominio.com/img/og-cover.jpg">
+  <meta property="og:locale" content="pt_BR">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="GGBlogs">
+  <meta name="twitter:description" content="Descrição curta do blog.">
+  <meta name="twitter:image" content="https://www.seudominio.com/img/og-cover.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/svg+xml" href="/img/favicon.svg">
+  <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#111111">
+
+  <!-- ============================================================
+       PERFORMANCE — preconnect só no que você realmente usa
+       ============================================================ -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- CSS crítico inline (opcional, ajuda LCP) + CSS principal com carregamento normal -->
+  <link rel="stylesheet" href="/css/style.css">
+
+  <!-- JSON-LD: Schema.org Blog — ajuda o Google a entender a página -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    "name": "GGBlogs",
+    "url": "https://www.seudominio.com/",
+    "description": "Descrição do blog.",
+    "publisher": {
+      "@type": "Organization",
+      "name": "GGBlogs",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.seudominio.com/img/logo.png"
+      }
+    }
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Link de pular para o conteúdo — acessibilidade -->
+  <a href="#conteudo" class="skip-link">Pular para o conteúdo</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="/" class="logo" aria-label="Página inicial do GGBlogs">GG<span>Blogs</span></a>
+
+      <nav class="main-nav" aria-label="Navegação principal">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu">
+          <span class="sr-only">Abrir menu</span>
+          <span class="nav-toggle-bar"></span>
+        </button>
+        <ul id="nav-menu" class="nav-menu">
+          <li><a href="/">Início</a></li>
+          <li><a href="/categoria.html">Categorias</a></li>
+          <li><a href="/sobre.html">Sobre</a></li>
+          <li><a href="/afiliados.html">Produtos afiliados</a></li>
+        </ul>
+      </nav>
+
+      <button id="theme-toggle" class="theme-toggle" aria-label="Alternar tema claro/escuro">
+        <span aria-hidden="true">🌙</span>
+      </button>
+    </div>
+  </header>
+
+  <main id="conteudo">
+
+    <!-- HERO / destaque opcional -->
+    <section class="hero container">
+      <h1>GG<span class="accent">Blogs</span></h1>
+      <p class="hero-subtitle">Tudo o que importa no universo pop.</p>
+    </section>
+
+    <!-- LISTAGEM DE POSTS -->
+    <section class="post-list container" aria-label="Lista de artigos">
+
+      <!-- ==== CARD DE POST — duplique este <article> para cada post ==== -->
+      <article class="post-card">
+        <a href="/posts/post1.html" class="post-card-link">
+          <img
+            class="post-card-img"
+            src="/img/posts/exemplo-thumb.jpg"
+            srcset="/img/posts/exemplo-thumb-400.jpg 400w, /img/posts/exemplo-thumb-800.jpg 800w"
+            sizes="(max-width: 600px) 100vw, 400px"
+            width="400" height="240"
+            alt="Descrição objetiva da imagem"
+            loading="lazy"
+            decoding="async">
+          <div class="post-card-body">
+            <span class="post-card-category">Categoria</span>
+            <h2 class="post-card-title">Título do post de exemplo</h2>
+            <p class="post-card-excerpt">Resumo curto do post, de uma a duas linhas, para dar contexto ao leitor.</p>
+            <div class="post-card-meta">
+              <time datetime="2026-08-15">15 de agosto de 2026</time>
+              <span aria-hidden="true">·</span>
+              <span>6 min de leitura</span>
+            </div>
+          </div>
+        </a>
+      </article>
+      <!-- ==== FIM DO CARD DE POST ==== -->
+
+    </section>
+
+    <!-- PAGINAÇÃO -->
+    <nav class="pagination container" aria-label="Paginação de posts">
+      <a href="#" class="pagination-prev" aria-disabled="true">&larr; Anterior</a>
+      <span class="pagination-current" aria-current="page">1</span>
+      <a href="/pagina/2.html" class="pagination-next">Próxima &rarr;</a>
+    </nav>
+
+    <!-- Espaço de anúncio — antes do rodapé 
+    <div class="ad-slot ad-slot--leaderboard container" aria-hidden="true"></div>
+    Ativar quando tiver Adsense-->
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="ano"></span> <span class="brand-name">GG<span>Blogs</span></span>. Todos os direitos reservados.</p>
+      <ul class="footer-links">
+        <li><a href="/politica-de-privacidade.html">Privacidade</a></li>
+        <li><a href="/rss.xml">RSS</a></li>
+        <li><a href="/sitemap.xml">Sitemap</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="/js/main.js" defer></script>
+</body>
+</html>
