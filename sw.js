@@ -8,9 +8,9 @@
 const CACHE_NAME = "blog-cache-v1";
 const ASSETS_TO_CACHE = [
   "/",
-  "/css/style.css",
-  "/js/main.js",
-  "/manifest.json"
+  "css/style.css",
+  "js/main.js",
+  "manifest.json"
 ];
 
 self.addEventListener("install", (event) => {
@@ -45,7 +45,7 @@ self.addEventListener("fetch", (event) => {
           caches.open(CACHE_NAME).then((cache) => cache.put(event.request, responseClone));
           return response;
         })
-        .catch(() => caches.match("/404.html"));
+        .catch(() => caches.match("404.html"));
     })
   );
 });
