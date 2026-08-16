@@ -151,8 +151,17 @@ a:hover { color: var(--color-primary); }
 }
 .nav-toggle {
   display: none;
-  width: 32px; height: 24px;
+  align-items: center;
+  gap: var(--space-2);
+}
+.nav-toggle-icon {
   position: relative;
+  width: 28px; height: 20px;
+  flex-shrink: 0;
+}
+.nav-toggle-label {
+  font-size: var(--fs-sm);
+  font-weight: 600;
 }
 .nav-toggle-bar,
 .nav-toggle-bar::before,
@@ -605,15 +614,26 @@ a:hover { color: var(--color-primary); }
 .skip-link:focus { left: var(--space-4); top: var(--space-4); }
 
 /* ---------- 7. RESPONSIVO ---------- */
-@media (max-width: 768px) {
-  .nav-toggle { display: block; }
-  .nav-menu {
+
+/* Faixa intermediária: encolhe espaçamento e fonte do menu horizontal
+   para tentar caber o máximo possível antes de virar hambúrguer */
+@media (max-width: 960px) {
+  .main-nav .nav-menu { gap: var(--space-4); }
+  .main-nav .nav-menu a { font-size: var(--fs-sm); }
+  .logo { font-size: var(--fs-lg); }
+}
+
+@media (max-width: 680px) {
+  .nav-toggle { display: flex; }
+  .main-nav .nav-menu {
     position: absolute;
     top: 64px; left: 0; right: 0;
     background: var(--color-bg);
     flex-direction: column;
-    padding: var(--space-4);
+    gap: var(--space-2);
+    padding: var(--space-3) var(--space-4);
     border-bottom: 1px solid var(--color-border);
+    box-shadow: var(--shadow-md);
     display: none;
   }
   .nav-menu.is-open { display: flex; }
