@@ -25,12 +25,12 @@
   <link rel="icon" href="/favicon.ico" sizes="any">
   <link rel="icon" type="image/svg+xml" href="/img/favicon.svg">
   <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
-  <link rel="manifest" href="../manifest.json">
+  <link rel="manifest" href="/manifest.json">
   <meta name="theme-color" content="#111111">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="/css/style.css">
 
   <!-- JSON-LD: Blog (mesma entidade da home, URL desta página específica) -->
   <script type="application/ld+json">
@@ -69,7 +69,7 @@
 
   <header class="site-header">
     <div class="container header-inner">
-      <a href="../index.html" class="logo" aria-label="Página inicial do GGBlogs">GG<span>Blogs</span></a>
+      <a href="/" class="logo" aria-label="Página inicial do GGBlogs">GG<span>Blogs</span></a>
 
       <nav class="main-nav" aria-label="Navegação principal">
         <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu">
@@ -80,10 +80,10 @@
           <span class="nav-toggle-label" aria-hidden="true">Menu</span>
         </button>
         <ul id="nav-menu" class="nav-menu">
-          <li><a href="../index.html">Início</a></li>
-          <li><a href="../categoria.html">Categorias</a></li>
-          <li><a href="../sobre.html">Sobre</a></li>
-          <li><a href="../afiliados.html">Produtos Afiliados</a></li>
+          <li><a href="/">Início</a></li>
+          <li><a href="/categoria.html">Categorias</a></li>
+          <li><a href="/sobre.html">Sobre</a></li>
+          <li><a href="/afiliados.html">Produtos Afiliados</a></li>
         </ul>
       </nav>
 
@@ -97,7 +97,7 @@
 
     <nav class="breadcrumb container" aria-label="Trilha de navegação">
       <ol>
-        <li><a href="../index.html">Início</a></li>
+        <li><a href="/">Início</a></li>
         <li aria-current="page">Página 2</li>
       </ol>
     </nav>
@@ -105,29 +105,246 @@
     <!-- Espaço de anúncio — topo -->
     <div class="ad-slot ad-slot--leaderboard container" aria-hidden="true"></div>
 
-    <!-- LISTAGEM DE POSTS -->
-    <section class="post-list container" aria-label="Lista de artigos">
+    <!-- LISTAGEM DE POSTS — grid denso, cabe o máximo de posts possível por tela -->
+    <section class="post-list post-list--dense container" aria-label="Lista de artigos">
 
       <!-- ==== CARD DE POST — duplique este <article> para cada post ==== -->
-      <article class="post-card">
-        <a href="../posts/post1.html" class="post-card-link">
+      <article class="post-card post-card--compact">
+        <a href="/posts/nome-do-post.html" class="post-card-link">
           <img
             class="post-card-img"
             src="/img/posts/exemplo-thumb.jpg"
-            srcset="/img/posts/exemplo-thumb-400.jpg 400w, /img/posts/exemplo-thumb-800.jpg 800w"
-            sizes="(max-width: 600px) 100vw, 400px"
-            width="400" height="240"
+            width="400" height="225"
             alt="Descrição objetiva da imagem"
             loading="lazy"
             decoding="async">
           <div class="post-card-body">
             <span class="post-card-category">Categoria</span>
             <h2 class="post-card-title">Título do post de exemplo</h2>
-            <p class="post-card-excerpt">Resumo curto do post, de uma a duas linhas, para dar contexto ao leitor.</p>
             <div class="post-card-meta">
-              <time datetime="2026-08-15">15 de agosto de 2026</time>
+              <time datetime="2026-08-15">15 ago 2026</time>
               <span aria-hidden="true">·</span>
-              <span>6 min de leitura</span>
+              <span>6 min</span>
+            </div>
+          </div>
+        </a>
+      </article>
+      <article class="post-card post-card--compact">
+        <a href="/posts/nome-do-post.html" class="post-card-link">
+          <img
+            class="post-card-img"
+            src="/img/posts/exemplo-thumb.jpg"
+            width="400" height="225"
+            alt="Descrição objetiva da imagem"
+            loading="lazy"
+            decoding="async">
+          <div class="post-card-body">
+            <span class="post-card-category">Categoria</span>
+            <h2 class="post-card-title">Título do post de exemplo</h2>
+            <div class="post-card-meta">
+              <time datetime="2026-08-15">15 ago 2026</time>
+              <span aria-hidden="true">·</span>
+              <span>6 min</span>
+            </div>
+          </div>
+        </a>
+      </article>
+      <article class="post-card post-card--compact">
+        <a href="/posts/nome-do-post.html" class="post-card-link">
+          <img
+            class="post-card-img"
+            src="/img/posts/exemplo-thumb.jpg"
+            width="400" height="225"
+            alt="Descrição objetiva da imagem"
+            loading="lazy"
+            decoding="async">
+          <div class="post-card-body">
+            <span class="post-card-category">Categoria</span>
+            <h2 class="post-card-title">Título do post de exemplo</h2>
+            <div class="post-card-meta">
+              <time datetime="2026-08-15">15 ago 2026</time>
+              <span aria-hidden="true">·</span>
+              <span>6 min</span>
+            </div>
+          </div>
+        </a>
+      </article>
+      <article class="post-card post-card--compact">
+        <a href="/posts/nome-do-post.html" class="post-card-link">
+          <img
+            class="post-card-img"
+            src="/img/posts/exemplo-thumb.jpg"
+            width="400" height="225"
+            alt="Descrição objetiva da imagem"
+            loading="lazy"
+            decoding="async">
+          <div class="post-card-body">
+            <span class="post-card-category">Categoria</span>
+            <h2 class="post-card-title">Título do post de exemplo</h2>
+            <div class="post-card-meta">
+              <time datetime="2026-08-15">15 ago 2026</time>
+              <span aria-hidden="true">·</span>
+              <span>6 min</span>
+            </div>
+          </div>
+        </a>
+      </article>
+      <article class="post-card post-card--compact">
+        <a href="/posts/nome-do-post.html" class="post-card-link">
+          <img
+            class="post-card-img"
+            src="/img/posts/exemplo-thumb.jpg"
+            width="400" height="225"
+            alt="Descrição objetiva da imagem"
+            loading="lazy"
+            decoding="async">
+          <div class="post-card-body">
+            <span class="post-card-category">Categoria</span>
+            <h2 class="post-card-title">Título do post de exemplo</h2>
+            <div class="post-card-meta">
+              <time datetime="2026-08-15">15 ago 2026</time>
+              <span aria-hidden="true">·</span>
+              <span>6 min</span>
+            </div>
+          </div>
+        </a>
+      </article>
+      <article class="post-card post-card--compact">
+        <a href="/posts/nome-do-post.html" class="post-card-link">
+          <img
+            class="post-card-img"
+            src="/img/posts/exemplo-thumb.jpg"
+            width="400" height="225"
+            alt="Descrição objetiva da imagem"
+            loading="lazy"
+            decoding="async">
+          <div class="post-card-body">
+            <span class="post-card-category">Categoria</span>
+            <h2 class="post-card-title">Título do post de exemplo</h2>
+            <div class="post-card-meta">
+              <time datetime="2026-08-15">15 ago 2026</time>
+              <span aria-hidden="true">·</span>
+              <span>6 min</span>
+            </div>
+          </div>
+        </a>
+      </article>
+      <article class="post-card post-card--compact">
+        <a href="/posts/nome-do-post.html" class="post-card-link">
+          <img
+            class="post-card-img"
+            src="/img/posts/exemplo-thumb.jpg"
+            width="400" height="225"
+            alt="Descrição objetiva da imagem"
+            loading="lazy"
+            decoding="async">
+          <div class="post-card-body">
+            <span class="post-card-category">Categoria</span>
+            <h2 class="post-card-title">Título do post de exemplo</h2>
+            <div class="post-card-meta">
+              <time datetime="2026-08-15">15 ago 2026</time>
+              <span aria-hidden="true">·</span>
+              <span>6 min</span>
+            </div>
+          </div>
+        </a>
+      </article>
+      <article class="post-card post-card--compact">
+        <a href="/posts/nome-do-post.html" class="post-card-link">
+          <img
+            class="post-card-img"
+            src="/img/posts/exemplo-thumb.jpg"
+            width="400" height="225"
+            alt="Descrição objetiva da imagem"
+            loading="lazy"
+            decoding="async">
+          <div class="post-card-body">
+            <span class="post-card-category">Categoria</span>
+            <h2 class="post-card-title">Título do post de exemplo</h2>
+            <div class="post-card-meta">
+              <time datetime="2026-08-15">15 ago 2026</time>
+              <span aria-hidden="true">·</span>
+              <span>6 min</span>
+            </div>
+          </div>
+        </a>
+      </article>
+      <article class="post-card post-card--compact">
+        <a href="/posts/nome-do-post.html" class="post-card-link">
+          <img
+            class="post-card-img"
+            src="/img/posts/exemplo-thumb.jpg"
+            width="400" height="225"
+            alt="Descrição objetiva da imagem"
+            loading="lazy"
+            decoding="async">
+          <div class="post-card-body">
+            <span class="post-card-category">Categoria</span>
+            <h2 class="post-card-title">Título do post de exemplo</h2>
+            <div class="post-card-meta">
+              <time datetime="2026-08-15">15 ago 2026</time>
+              <span aria-hidden="true">·</span>
+              <span>6 min</span>
+            </div>
+          </div>
+        </a>
+      </article>
+      <article class="post-card post-card--compact">
+        <a href="/posts/nome-do-post.html" class="post-card-link">
+          <img
+            class="post-card-img"
+            src="/img/posts/exemplo-thumb.jpg"
+            width="400" height="225"
+            alt="Descrição objetiva da imagem"
+            loading="lazy"
+            decoding="async">
+          <div class="post-card-body">
+            <span class="post-card-category">Categoria</span>
+            <h2 class="post-card-title">Título do post de exemplo</h2>
+            <div class="post-card-meta">
+              <time datetime="2026-08-15">15 ago 2026</time>
+              <span aria-hidden="true">·</span>
+              <span>6 min</span>
+            </div>
+          </div>
+        </a>
+      </article>
+      <article class="post-card post-card--compact">
+        <a href="/posts/nome-do-post.html" class="post-card-link">
+          <img
+            class="post-card-img"
+            src="/img/posts/exemplo-thumb.jpg"
+            width="400" height="225"
+            alt="Descrição objetiva da imagem"
+            loading="lazy"
+            decoding="async">
+          <div class="post-card-body">
+            <span class="post-card-category">Categoria</span>
+            <h2 class="post-card-title">Título do post de exemplo</h2>
+            <div class="post-card-meta">
+              <time datetime="2026-08-15">15 ago 2026</time>
+              <span aria-hidden="true">·</span>
+              <span>6 min</span>
+            </div>
+          </div>
+        </a>
+      </article>
+      <article class="post-card post-card--compact">
+        <a href="/posts/nome-do-post.html" class="post-card-link">
+          <img
+            class="post-card-img"
+            src="/img/posts/exemplo-thumb.jpg"
+            width="400" height="225"
+            alt="Descrição objetiva da imagem"
+            loading="lazy"
+            decoding="async">
+          <div class="post-card-body">
+            <span class="post-card-category">Categoria</span>
+            <h2 class="post-card-title">Título do post de exemplo</h2>
+            <div class="post-card-meta">
+              <time datetime="2026-08-15">15 ago 2026</time>
+              <span aria-hidden="true">·</span>
+              <span>6 min</span>
             </div>
           </div>
         </a>
@@ -138,9 +355,9 @@
 
     <!-- PAGINAÇÃO -->
     <nav class="pagination container" aria-label="Paginação de posts">
-      <a href="../index.html" class="pagination-prev">&larr; Anterior</a>
+      <a href="/" class="pagination-prev">&larr; Anterior</a>
       <span class="pagination-current" aria-current="page">2</span>
-      <a href="/" class="pagination-next">Próxima &rarr;</a>
+      <a href="/pagina/3.html" class="pagination-next">Próxima &rarr;</a>
     </nav>
 
     <!-- Espaço de anúncio — antes do rodapé -->
@@ -152,13 +369,13 @@
     <div class="container footer-inner">
       <p>&copy; <span id="ano"></span> <span class="brand-name">GG<span>Blogs</span></span>. Todos os direitos reservados.</p>
       <ul class="footer-links">
-        <li><a href="../politica-de-privacidade.html">Privacidade</a></li>
-        <li><a href="../rss.xml">RSS</a></li>
-        <li><a href="../sitemap.xml">Sitemap</a></li>
+        <li><a href="/politica-de-privacidade.html">Privacidade</a></li>
+        <li><a href="/rss.html">RSS</a></li>
+        <li><a href="/sitemap.html">Sitemap</a></li>
       </ul>
     </div>
   </footer>
 
-  <script src="../js/main.js" defer></script>
+  <script src="/js/main.js" defer></script>
 </body>
 </html>

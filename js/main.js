@@ -75,4 +75,18 @@
     lazyImages.forEach(function (img) { io.observe(img); });
   }
 
+  /* ---------- Prévia de código de arquivos técnicos (RSS/Sitemap) ---------- */
+  var codePreview = document.getElementById("raw-code-preview");
+  if (codePreview) {
+    var src = codePreview.getAttribute("data-src");
+    if (src) {
+      fetch(src)
+        .then(function (res) { return res.text(); })
+        .then(function (text) { codePreview.textContent = text; })
+        .catch(function () {
+          codePreview.textContent = "Não foi possível carregar o conteúdo agora. Você pode abrir o arquivo diretamente pelo link acima.";
+        });
+    }
+  }
+
 })();
