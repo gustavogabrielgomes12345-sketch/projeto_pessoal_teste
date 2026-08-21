@@ -162,6 +162,7 @@ a:hover { color: var(--color-primary); }
 .nav-toggle-label {
   font-size: var(--fs-sm);
   font-weight: 600;
+  color: var(--color-text); /* Adicione esta linha */
 }
 .nav-toggle-bar,
 .nav-toggle-bar::before,
