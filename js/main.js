@@ -90,3 +90,22 @@
   }
 
 })();
+
+/* ---------- Gerenciamento do Banner de Cookies ---------- */
+(function initCookieBanner() {
+  var banner = document.getElementById("cookie-banner");
+  var acceptBtn = document.getElementById("cookie-accept-btn");
+  var STORAGE_COOKIE_KEY = "cookie_consent_accepted";
+
+  if (!banner || !acceptBtn) return;
+
+  // Se o usuário ainda não aceitou, exibe o banner
+  if (!localStorage.getItem(STORAGE_COOKIE_KEY)) {
+    banner.style.display = "flex";
+  }
+
+  acceptBtn.addEventListener("click", function () {
+    localStorage.setItem(STORAGE_COOKIE_KEY, "true");
+    banner.style.display = "none";
+  });
+})();
